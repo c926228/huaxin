@@ -1,8 +1,16 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <Head></Head>
   <router-view/>
 </template>
 
+<script>
+import Head from '@/components/Head.vue'
+
+export default {
+  components: {
+    Head
+  },
+  setup () {
+  }
+}
+</script>
